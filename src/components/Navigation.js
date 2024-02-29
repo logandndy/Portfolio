@@ -4,6 +4,9 @@ import homeIcon from "../img/accueil.png";
 import KnowledgesIcon from "../img/competences-techniques.png";
 import contactIcon from "../img/livre-de-contact.png";
 import portfolioIcon from "../img/renseignements-personnels.png";
+import linkedinIcon from "../img/signe-linkedin.png";
+import githubIcon from "../img/signe-github.png";
+import twitterIcon from "../img/twitter.png";
 
 const Navigation = () => {
   return (
@@ -44,7 +47,7 @@ const Navigation = () => {
                   alt="Portfolio"
                   className="pngPortfolio"
                 />
-                <span>Compétences</span>
+                <span>Portfolio</span>
               </div>
             </NavLink>
           </li>
@@ -52,7 +55,7 @@ const Navigation = () => {
             <NavLink exact to="/Contact" activeClassName="navActive">
               <div className="nav-item">
                 <img src={contactIcon} alt="Contact" className="pngContact" />
-                <span>Compétences</span>
+                <span>Contact</span>
               </div>
             </NavLink>
           </li>
@@ -61,13 +64,15 @@ const Navigation = () => {
       <div className="socialNetwork">
         <ul>
           <li>
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
+            <div className="nav-res">
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={githubIcon} alt="res" className="pngGithub" />
+              </a>
+            </div>
           </li>
           <li>
             <a
@@ -75,17 +80,19 @@ const Navigation = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-twitter"></i>
+              <img src={twitterIcon} alt="res" className="pngTwitter" />
             </a>
           </li>
           <li>
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-codepen">codepen</i>
-            </a>
+            <div className="nav-res">
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={linkedinIcon} alt="res" className="pngLinkedin" />
+              </a>
+            </div>
           </li>
         </ul>
       </div>

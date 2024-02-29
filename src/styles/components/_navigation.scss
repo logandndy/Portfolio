@@ -58,14 +58,38 @@
                     color:white;
                 }
 
-                li:hover{
-                    transform: scale(25px);
-                }
+                .nav-item {
+                    display: flex;
+                    align-items: center;
+                   }
+                   
+                   .pngHome, .pngKnowledges, .pngContact, .pngPortfolio {
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 5px; 
+                   }
 
                 a {
                     color: $black;
                 }
-                
+            }
+        }
+    }
+    .socialNetwork{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                .nav-res{
+                    display: flex;
+                    align-items: center;
+                }
+                .pngLinkedin, .pngGithub, .pngTwitter{
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 15px; 
+                }
             }
         }
     }
