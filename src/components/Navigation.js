@@ -1,5 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import homeIcon from "../img/accueil.png";
+import KnowledgesIcon from "../img/competences-techniques.png";
+import contactIcon from "../img/livre-de-contact.png";
+import portfolioIcon from "../img/renseignements-personnels.png";
 
 const Navigation = () => {
   return (
@@ -14,26 +18,42 @@ const Navigation = () => {
         <ul>
           <li>
             <NavLink exact to="/" activeClassName="navActive">
-              <i className="fas fa-home"></i>
-              <span>Accueil</span>
+              <div className="nav-item">
+                <img src={homeIcon} alt="Home" className="pngHome" />
+                <span>Accueil</span>
+              </div>
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/Knowledges" activeClassName="navActive">
-              <i className="fas fa-mountain"></i>
-              <span>Compétences</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/Contact" activeClassName="navActive">
-              <i className="fas fa-home"></i>
-              <span>Contact</span>
+              <div className="nav-item">
+                <img
+                  src={KnowledgesIcon}
+                  alt="Knowledges"
+                  className="pngKnowledges"
+                />
+                <span>Compétences</span>
+              </div>
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/Portfolio" activeClassName="navActive">
-              <i className="fas fa-home"></i>
-              <span>Portfolio</span>
+              <div className="nav-item">
+                <img
+                  src={portfolioIcon}
+                  alt="Portfolio"
+                  className="pngPortfolio"
+                />
+                <span>Compétences</span>
+              </div>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/Contact" activeClassName="navActive">
+              <div className="nav-item">
+                <img src={contactIcon} alt="Contact" className="pngContact" />
+                <span>Compétences</span>
+              </div>
             </NavLink>
           </li>
         </ul>
