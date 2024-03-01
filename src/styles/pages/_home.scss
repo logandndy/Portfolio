@@ -1,6 +1,6 @@
 .home{
     .homeContent{
-        background: linear-gradient(115deg, $color-5 50%, transparent 100%);
+        background: linear-gradient(115deg, $color-2 50%, transparent 100%);
         min-height: $min-height;
         width: 100%;
         border-radius: $borderRadius;
@@ -26,14 +26,14 @@
                 font-size: 5rem;
                 font-family: $font-2;
                 text-transform: uppercase;
-                text-shadow: -4px -2px 9px  $black;
-                color: $dark;
+                text-shadow: -4px -7px 8px rgb(176, 149, 221);
+                color: rgb(96 70 139);
             }
             h2{
                 font-size: 2rem;
                 padding: 1.5rem 0 7rem;
-                color: $dark;
-                text-shadow: -4px -2px 9px  $black;
+                color: rgb(96 70 139);
+                text-shadow: -8px -3px 20px rgb(150 121 198);
             }
             .pdf{
                 a{
@@ -41,11 +41,11 @@
                     background: $dark;
                     padding: 1rem 2rem;
                     border-radius: $borderRadius;
-                    box-shadow: 0 5px 1px rgb(15,15,15);
+                    box-shadow: inset 0px 0px 8px 2px rgb(150, 121, 198);
                     transition: 0.5s;
 
                     &:hover{
-                        background: $color-2;
+                        background: $color-5;
                         color: $dark;
                     }
                 }
