@@ -64,18 +64,24 @@
                    }
                    
                    .pngHome, .pngKnowledges, .pngContact, .pngPortfolio {
-                    width: 25px;
-                    height: 25px;
+                    width: 35px;
+                    height: 35px;
                     margin-right: 5px; 
                    }
 
                 a {
                     color: $black;
+
+                    &:hover{
+                        color: $white;
+                        transition: 0.25s;
+                    }
                 }
             }
         }
     }
     .socialNetwork{
+        grid-area: 3;
         ul{
             display: flex;
             justify-content: center;
@@ -86,9 +92,85 @@
                     align-items: center;
                 }
                 .pngLinkedin, .pngGithub, .pngTwitter{
-                    width: 35px;
-                    height: 35px;
-                    margin-right: 15px; 
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 35px;
+                }
+            }
+        }
+    }
+    .signature{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: .1rem;
+
+        p{
+            color: $black;
+
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width :850px){
+    .sidebar{
+        display: flex;
+        min-height: 50px;
+        margin-bottom: .2rem;
+        width: 100%;
+
+        .id, .socialNetwork{
+            display: none;
+        }
+        .navigation{
+            width: 100%;
+            padding: .1rem 1rem;
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+
+                span{
+                    margin-left: 0.3rem;
+                       
+                       .pngHome, .pngKnowledges, .pngContact, .pngPortfolio {
+                        margin-right: 5px !important; 
+                       }
+                }
+            }
+        }
+        .signature{
+            display: none;
+        }
+    }
+}
+    
+@media screen and (max-width :580px){
+    .sidebar{
+        display: flex;
+        min-height: 50px;
+        margin-bottom: .2rem;
+        width: 100%;
+
+        .id, .socialNetwork{
+            display: none;
+        }
+        .navigation{
+            width: 100%;
+            padding: .1rem 1rem;
+
+            ul{
+                justify-content: space-around;
+
+                li{
+                    padding: 1rem 0 !important;
+                       
+                }
+                span{
+                    display: none;
                 }
             }
         }
