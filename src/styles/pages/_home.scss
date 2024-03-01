@@ -1,0 +1,72 @@
+.home{
+    .homeContent{
+        background: linear-gradient(115deg, $color-5 50%, transparent 100%);
+        min-height: $min-height;
+        width: 100%;
+        border-radius: $borderRadius;
+        position: relative;
+        overflow: hidden;
+
+        &:after{
+            content: 'test';
+            position: absolute;
+            height: 100%;
+            width: inherit;
+            background: url('../../../public/media/shallow-depth-field-selective-focus-600nw-2131449791.webp') no-repeat center/cover;
+            z-index: -1;
+            filter: brightness(30%);
+        }
+        .content{
+            position: absolute;
+            top: 20%;
+            left: 13%;
+            font-family: $font-1;
+
+            h1{
+                font-size: 5rem;
+                font-family: $font-2;
+                text-transform: uppercase;
+                text-shadow: -4px -2px 9px  $black;
+                color: $dark;
+            }
+            h2{
+                font-size: 2rem;
+                padding: 1.5rem 0 7rem;
+                color: $dark;
+                text-shadow: -4px -2px 9px  $black;
+            }
+            .pdf{
+                a{
+                    font-size: 1.5rem;
+                    background: $dark;
+                    padding: 1rem 2rem;
+                    border-radius: $borderRadius;
+                    box-shadow: 0 5px 1px rgb(15,15,15);
+                    transition: 0.5s;
+
+                    &:hover{
+                        background: $color-2;
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:850px){
+    .homeContent{
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width:580px){
+    .homeContent{
+        h1{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+}

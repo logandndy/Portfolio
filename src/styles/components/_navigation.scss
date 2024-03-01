@@ -69,12 +69,12 @@
                     margin-right: 5px; 
                    }
 
-                a {
-                    color: $black;
-
+                span {
+                    color: $dark;
+                    transition: 0.25s;
+                    
                     &:hover{
-                        color: $white;
-                        transition: 0.25s;
+                        color: $color-2;
                     }
                 }
             }
@@ -95,6 +95,7 @@
                     width: 45px;
                     height: 45px;
                     margin-right: 35px;
+                    margin-left: 15px;
                 }
             }
         }
@@ -106,10 +107,10 @@
         letter-spacing: .1rem;
 
         p{
-            color: $black;
+            color: $dark;
 
             &:hover{
-                color: $white;
+                color: $color-2;
             }
         }
     }
