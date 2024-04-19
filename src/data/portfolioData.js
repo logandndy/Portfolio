@@ -9,7 +9,7 @@ export const portfolioData = [
     languages: ["javascript", "css", "figma"],
     languagesIcons: [iconfigma],
     source: "https://www.github.com",
-    info: "lorem",
+    info: "lorem loremloremloremloremloremlorem loremloremloremloremloremlorem loremloremloremloremloremlorem loremloremloremloremlorem",
     picture: "./media/dessinwo.png",
   },
   {
@@ -23,6 +23,15 @@ export const portfolioData = [
   },
   {
     id: 3,
+    name: "ipsum.com",
+    languages: ["javascript", "css", "adobe XD"],
+    languagesIcons: [iconadobexd],
+    source: "https://wwwgithub.com",
+    info: "lorem",
+    picture: "./media/dessinwo.png",
+  },
+  {
+    id: 4,
     name: "ipsum.com",
     languages: ["javascript", "css", "adobe XD"],
     languagesIcons: [iconadobexd],

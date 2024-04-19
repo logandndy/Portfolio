@@ -1,4 +1,5 @@
 import React from "react";
+import iconFigma from "../../img/iconfigma.svg";
 
 const Skills = () => {
   return (
@@ -22,7 +23,7 @@ const Skills = () => {
         </ul>
         <ul>
           <li>
-            <i class="fa-sharp fa-light fa-phone"></i>
+            <img src={iconFigma}></img>
             Figma
           </li>
           <li>

@@ -20,6 +20,11 @@ export default class Project extends Component {
 
   render() {
     let { name, languagesIcons, source, info, picture } = this.props.item;
+    const infoSegments = info.match(/.{1,100}/g);
+    // Transformer chaque segment en un élément <p> pour un retour à la ligne
+    const infoParagraphs = infoSegments.map((segment, index) => (
+      <p key={index}>{segment}</p>
+    ));
     return (
       <div className="project">
         <div className="icons">
@@ -57,7 +62,7 @@ export default class Project extends Component {
                       Code source
                     </a>
                   </div>
-                  <p className="text">{info}</p>
+                  <p className="text">{infoParagraphs}</p>
                 </div>
                 <div className="button return" onClick={this.handleInfo}>
                   Retourner sur la page

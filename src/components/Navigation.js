@@ -6,7 +6,7 @@ import contactIcon from "../img/livre-de-contact.png";
 import portfolioIcon from "../img/renseignements-personnels.png";
 import linkedinIcon from "../img/signe-linkedin.png";
 import githubIcon from "../img/signe-github.png";
-import twitterIcon from "../img/twitter.png";
+import twitterIcon from "../img/icons8-twitter.svg";
 
 const Navigation = () => {
   return (
@@ -75,13 +75,15 @@ const Navigation = () => {
             </div>
           </li>
           <li>
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={twitterIcon} alt="res" className="pngTwitter" />
-            </a>
+            <div className="nav-res">
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={twitterIcon} alt="res" className="pngTwitter" />
+              </a>
+            </div>
           </li>
           <li>
             <div className="nav-res">
