@@ -1,6 +1,6 @@
 import React from "react";
 import iconFigma from "../../img/iconfigma.svg";
-
+import iconXd from "../../img/iconadobexd.svg";
 const Skills = () => {
   return (
     <div className="otherSkills">
@@ -8,17 +8,20 @@ const Skills = () => {
       <div className="list">
         <ul>
           <li>
-            <img src="./img/approuver.png" />
-            Anglais courant
+            <img />
+            Anglais
           </li>
           <li>
-            <i></i>Anglais courant
+            <img src={iconXd}></img>
+            Adobe XD
           </li>
           <li>
-            <i></i>Anglais courant
+            <img></img>
+            Figma
           </li>
           <li>
-            <i></i>Anglais courant
+            <img src={iconFigma}></img>
+            Figma
           </li>
         </ul>
         <ul>
@@ -27,7 +30,8 @@ const Skills = () => {
             Figma
           </li>
           <li>
-            <i></i>UI/UX design
+            <img></img>
+            UI/UX design
           </li>
           <li>
             <i></i>Anglais courant

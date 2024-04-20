@@ -19,12 +19,12 @@
         font-size: 1.3rem;
         margin-bottom: 1rem;
         font-family: $font-1;
-        color: $color-5;
+        color: $color-6;
         text-transform: uppercase;
     }
     .languagesFrameworks{
         grid-area: L;
-        margin-bottom: 2.5rem;
+        margin-bottom: .5rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr ;
@@ -60,7 +60,7 @@
                 }
                 &:nth-child(2):before,&:nth-child(3):before{
                     content:'';
-                    background: rgba(180,179,179,0.5);
+                    background: $color-6;
                     position: absolute;
                     height: 146px;
                     width: 1px;
@@ -72,7 +72,7 @@
             padding-top: .5rem;
 
             li{
-                color: $color-5;
+                color: $color-6;
             }
             .progressBar{
                 height: 0.4rem;
@@ -116,7 +116,7 @@
         }
         h4{
             font-size: 1.1rem;
-            color:$color-5;
+            color:$color-6;
         }
         h5{
             color: $color-3;
@@ -148,8 +148,9 @@
                 height: 80%;
                 display: grid;
 
-                i{
-                    color: $color-5;
+                li{
+                    display: flex;
+                    align-items: center;
                 }
             }
         }

@@ -1,0 +1,168 @@
+.contactContent{
+    background: linear-gradient(360deg, #180137d1 15%, transparent 100%);
+    border-radius: $borderRadius;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 45% 35%;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3";
+
+    &:after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: inherit;
+        background: url(../../img/_95c9c56f-d4ea-4897-ad80-c911e9eee718.jpg) no-repeat center/cover;
+        z-index: -1;
+        filter: brightness(30%);
+    }
+
+.contactBox{
+        grid-area: 2;
+        background-color: $color-5;
+        margin: 0 auto;
+        padding: 1rem 3rem;
+        z-index: 2;
+        border-radius: $borderRadius;
+        box-shadow: 0 3px 10px #333;
+        width: 50%;
+        min-width: 440px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow:#FFF 0 -1px 4px, rgb(194, 185, 254) 0 -2px 10px, #2a1d52 0 -10px 20px, rgb(176, 149, 221) 0px 8px 40px, 5px 5px 6px -9px rgba(0, 0, 0, 0);
+
+        h1{
+            text-align: center;
+            margin-top: 0.3rem;
+            position: relative;
+            color: $color-6;
+
+            &::after{
+                content: '';
+                height: 1px;
+                width: 50%;
+                background-color: $color-1;
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        ul{
+            height: 72%;
+            width: inherit;
+            display: flex;
+            margin-top: 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+
+            li{
+                display: flex;
+                padding: 10px 0px;
+                position: relative;
+                align-items: center;
+            }
+
+            span{
+                font-size: 1.4rem;
+                color: $color-6;
+                position: absolute;
+                transform: translateX(52px);
+                background: transparent;
+                border: none;
+                outline: none;
+                width: 350px;
+                transition: .2 ease;
+                padding-left: 25px;
+            }
+            .clickInput:hover{
+                transform: translateX(56px);
+                cursor: pointer;
+            }
+        }
+    }
+    .socialNetwork{
+        grid-area: 3;
+        @include verticalCenter;
+        
+        ul{
+            display: flex;
+            text-align: center;
+            width: 90%;
+            justify-content: space-between;
+
+            a{
+               width: 20%;
+               font-size: 1.4rem;
+               background-color: $color-5;
+               border-radius: $borderRadius;
+               display: inline-block;
+               padding: 0.7rem 0;
+               transform: scaleY(0);
+               transform-origin: center;
+               transition: 0.75s;
+               box-shadow:#FFF 0 -1px 4px, rgb(194 185 254)0 -2px 10px, #2a1d52 0 -10px 20px, rgb(176 149 221) 0 -18px 40px, 5px 5px 6px -9px rgba(0,0,0,0);
+               
+               &:hover{
+                background: $color-1;
+                transition: 0.75s;
+                border-radius: 25px;
+                filter: brightness(125%);
+                box-shadow: #FFF 0 -1px 4px, rgb(194, 185, 254) 0 -2px 10px, #2a1d52 0 -10px 20px, rgb(176, 149, 221) 0px 20px 40px, 5px 5px 6px -9px rgba(0, 0, 0, 0);
+               }
+
+               img{
+                color: $color-2;
+                margin-top: .3rem;
+                width: 64px;
+               }
+               h4{
+                color: $color-6;
+               }
+            }
+            // animation
+            @mixin networkAnim($timeout){
+                animation: pop 1s forwards;
+                animation-delay: $timeout;
+            }
+            @keyframes pop {
+                to{
+                    transform: scaleY(1);
+                }
+            }
+            a:nth-child(1){
+                @include networkAnim(.4s)
+            }
+            a:nth-child(2){
+                @include networkAnim(.8s)
+            }
+            a:nth-child(3){
+                @include networkAnim(1.2s)
+            }
+            a:nth-child(4){
+                @include networkAnim(1.6s)
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .contactContent {
+        .contactBox {
+            min-width: 100% !important;
+        }
+        span {
+            font-size: .9rem !important;
+        }
+        h4 {
+            font-size: .9rem;
+        }
+    }
+}
