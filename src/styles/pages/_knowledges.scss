@@ -15,6 +15,11 @@
         border-radius: $borderRadius;
         padding: .8rem;
     }
+    .languagesFrameworks:hover{
+        transition: 0.75s;
+        transform: scale(1.1) translate(30%, 15%);
+        z-index: 1000;
+    }
     h3{
         font-size: 1.3rem;
         margin-bottom: 1rem;
@@ -27,13 +32,18 @@
         margin-bottom: .5rem;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
         'L'
-        'F';
+        'F'
+        'LO';
+        transition: 0.75s;
 
         .languagesDisplay{
             grid-area: L;
+        }
+        .logicielsDisplay{
+            grid-area: LO;
         }
         .frameworksDisplay{
             grid-area: F;
@@ -100,6 +110,11 @@
             }
         }
     }
+    .experience:hover{
+        transition: 0.75s;
+        transform: scale(1.1) translate(-25%, 10%);
+        z-index: 1000;
+    }
     .experience{
         grid-area: E;
         margin: 0 0 .5rem .5rem;
@@ -110,7 +125,7 @@
         '1'
         '2'
         '3';
-
+        transition: 0.75s;
         h3{
             grid-area: 1;
         }
@@ -133,31 +148,46 @@
             grid-area: 3;
         }
     }
+    .otherSkills:hover{
+        transition: 0.75s;
+        transform: scale(1.1) translate(10%, -50%);
+        z-index: 1000;
+    }
     .otherSkills{
         grid-area: O;
         margin-right: 0.5rem;
+        transition: 0.75s;
 
         .list{
             display: flex;
             width: 80%;
             height: 100%;
             margin: 0 auto;
-            justify-content: space-between;
+            justify-content: space-around;
 
-            ul{
+            ul {
                 height: 80%;
-                display: grid;
-
-                li{
-                    display: flex;
-                    align-items: center;
-                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+               }
+               
+                li {
+                display: flex;
+                align-items: center;
             }
-        }
+        }               
+    }
+    .hobbies:hover{
+        transition: 0.75s;
+        transform: scale(1.1) translate(-30%, -30%);
+        z-index: 1000;
     }
     .hobbies{
         grid-area: H;
         padding-left: 1.5rem;
+        transition: 0.75s;
 
         ul{
             height: 80%;

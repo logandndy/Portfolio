@@ -13,7 +13,6 @@ const Navigation = () => {
     <div className="sidebar">
       <div className="id">
         <div className="idContent">
-          <img src="./media/dessinwo.png" alt="profil-pic" />
           <h1>Logan</h1>
         </div>
       </div>

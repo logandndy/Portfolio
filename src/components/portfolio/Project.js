@@ -28,14 +28,17 @@ export default class Project extends Component {
     return (
       <div className="project">
         <div className="icons">
-          {languagesIcons.map((iconPath, index) => (
-            <img
-              className="imgIcons"
-              src={iconPath}
-              alt={`Icone ${index}`}
-              key={index}
-            />
-          ))}
+          <div className="iconsimg">
+            {languagesIcons.map((iconPath, index) => (
+              <img
+                className="imgIcons"
+                src={iconPath}
+                alt={`Icone ${index}`}
+                key={index}
+              />
+            ))}
+          </div>
+
           <h3>{name}</h3>
           <img
             className="imgProject"

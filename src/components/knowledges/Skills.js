@@ -7,37 +7,22 @@ const Skills = () => {
       <h3>autre compétences</h3>
       <div className="list">
         <ul>
-          <li>
-            <img />
-            Anglais
-          </li>
-          <li>
-            <img src={iconXd}></img>
-            Adobe XD
-          </li>
+          <li>Adobe XD</li>
           <li>
             <img></img>
-            Figma
+            Wordpress
           </li>
-          <li>
-            <img src={iconFigma}></img>
-            Figma
-          </li>
+          <li>Webflow</li>
         </ul>
         <ul>
-          <li>
-            <img src={iconFigma}></img>
-            Figma
-          </li>
+          <li>Figma</li>
           <li>
             <img></img>
             UI/UX design
           </li>
           <li>
-            <i></i>Anglais courant
-          </li>
-          <li>
-            <i></i>Anglais courant
+            <img />
+            Utilisation de l'IA
           </li>
         </ul>
       </div>
