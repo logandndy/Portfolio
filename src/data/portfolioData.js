@@ -23,22 +23,4 @@ export const portfolioData = [
     info: "lorem",
     picture: "./media/unnamed.webp",
   },
-  {
-    id: 3,
-    name: "ipsum.com",
-    languages: ["javascript", "css", "figma"],
-    languagesIcons: [iconfigma],
-    source: "https://wwwgithub.com",
-    info: "lorem",
-    picture: "./media/dessinwo.png",
-  },
-  {
-    id: 4,
-    name: "ipsum.com",
-    languages: ["javascript", "css", "adobe XD"],
-    languagesIcons: [iconadobexd],
-    source: "https://wwwgithub.com",
-    info: "lorem",
-    picture: "./media/dessinwo.png",
-  },
 ];

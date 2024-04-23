@@ -155,14 +155,32 @@
 }
 @media screen and (max-width: 500px) {
     .contactContent {
+        min-height: 86vh !important;
         .contactBox {
-            min-width: 100% !important;
+            min-width: 90% !important;
+
+            ul{
+                height: 100%;
+
+                img{
+                    width: 40px;
+                }
+            }
         }
         span {
             font-size: .9rem !important;
         }
         h4 {
             font-size: .9rem;
+        }
+        .socialNetwork{
+            ul{
+                a{
+                    img{
+                        width: 45px;
+                    }
+                }
+            }
         }
     }
 }
