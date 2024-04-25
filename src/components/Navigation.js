@@ -65,7 +65,7 @@ const Navigation = () => {
           <li>
             <div className="nav-res">
               <a
-                href="https://www.google.com"
+                href="https://github.com/logandndy"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -87,7 +87,7 @@ const Navigation = () => {
           <li>
             <div className="nav-res">
               <a
-                href="https://www.google.com"
+                href="https://www.linkedin.com/in/logan-donday-654274220/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -50,7 +50,7 @@ const Contact = () => {
         <div className="socialNetwork">
           <ul>
             <a
-              href="http://www.google.com"
+              href="https://www.linkedin.com/in/logan-donday-654274220/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -58,7 +58,7 @@ const Contact = () => {
               <img src={iconLinked}></img>
             </a>
             <a
-              href="http://www.google.com"
+              href="https://github.com/logandndy"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,14 +72,6 @@ const Contact = () => {
             >
               <h4>LinkedIn</h4>
               <img src={iconLinked}></img>
-            </a>
-            <a
-              href="http://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h4>Github</h4>
-              <img src={iconGit}></img>
             </a>
           </ul>
         </div>

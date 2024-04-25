@@ -18,8 +18,16 @@ export default class Project extends Component {
     });
   };
 
+  componentDidMount() {
+    // Vérifier si source1 est défini pour l'élément avec id: 2
+    if (this.props.item.id === 2 && !this.props.item.source1) {
+      window.alert("Cet élément ne possède pas de code source.");
+    }
+  }
+
   render() {
-    let { name, languagesIcons, source, info, picture } = this.props.item;
+    let { name, languagesIcons, source, source1, info, picture } =
+      this.props.item;
     const infoSegments = info.match(/.{1,100}/g);
     // Transformer chaque segment en un élément <p> pour un retour à la ligne
     const infoParagraphs = infoSegments.map((segment, index) => (
@@ -62,8 +70,18 @@ export default class Project extends Component {
                       className="button"
                       target="_blank"
                     >
-                      Code source
+                      Maquette
                     </a>
+                    {source1 && (
+                      <a
+                        href={source1}
+                        rel="noopener noreferrer"
+                        className="button"
+                        target="_blank"
+                      >
+                        Code source
+                      </a>
+                    )}
                   </div>
                   <p className="text">{infoParagraphs}</p>
                 </div>
