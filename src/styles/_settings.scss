@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-$font-1:'Josephin sans', cursive;
-$font-2:'Anta family', cursive;
+
 
 $color-1: #2a1d52;
 $color-2: #180137;
@@ -29,7 +27,6 @@ $min-height:95vh;
 body{
     margin: 1rem auto;
     max-width: 1200px;
-    font-family: $font-1;
     color: $black;
 }
 button{
