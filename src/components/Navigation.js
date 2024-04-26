@@ -19,7 +19,10 @@ const Navigation = () => {
       <div className="navigation">
         <ul>
           <li>
-            <NavLink exact to="/" activeClassName="navActive">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "navActive" : "")}
+            >
               <div className="nav-item">
                 <img src={homeIcon} alt="Home" className="pngHome" />
                 <span>Accueil</span>
@@ -27,7 +30,11 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/Knowledges" activeClassName="navActive">
+            <NavLink
+              exact
+              to="/Knowledges"
+              className={({ isActive }) => (isActive ? "navActive" : "")}
+            >
               <div className="nav-item">
                 <img
                   src={KnowledgesIcon}
@@ -39,7 +46,11 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/Portfolio" activeClassName="navActive">
+            <NavLink
+              exact
+              to="/Portfolio"
+              className={({ isActive }) => (isActive ? "navActive" : "")}
+            >
               <div className="nav-item">
                 <img
                   src={portfolioIcon}
@@ -51,7 +62,11 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/Contact" activeClassName="navActive">
+            <NavLink
+              exact
+              to="/Contact"
+              className={({ isActive }) => (isActive ? "navActive" : "")}
+            >
               <div className="nav-item">
                 <img src={contactIcon} alt="Contact" className="pngContact" />
                 <span>Contact</span>

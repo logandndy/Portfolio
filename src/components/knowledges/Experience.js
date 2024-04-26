@@ -6,7 +6,7 @@ const experience = () => {
       <h3>Expérience</h3>
       <div className="exp-1">
         <h4>Experience n°1</h4>
-        <h5>date</h5>
+        <h5>2023/24</h5>
         <p>
           Pendant ma formation, j'ai développé une application web e-commerce en
           utilisant Figma pour le zoning, les wireframes, et la création de
@@ -18,15 +18,16 @@ const experience = () => {
       </div>
       <div className="exp-2">
         <h4>Experience 2</h4>
-        <h5>date</h5>
+        <h5>2024</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          J'ai réalisé un site vitrine pour le développement de l'activité d'un
+          client, en commençant par la conception de ce site via Figma. Cette
+          phase a impliqué la création de zonages, de wireframes et de maquettes
+          pour les versions desktop et mobile. Après avoir défini le design,
+          j'ai utilisé Webflow pour appliquer ce design, ce qui m'a permis
+          d'acquérir une première expérience pratique avec Webflow. Cette
+          approche a non seulement renforcé mes compétences en design UI/UX mais
+          aussi mes compétences dans ce logiciel no-code.
         </p>
       </div>
     </div>

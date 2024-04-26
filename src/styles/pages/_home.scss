@@ -29,7 +29,7 @@
             }
             h2{
                 font-size: 2rem;
-                padding: 1.5rem 0 7rem;
+                padding: 1.5rem 0 3rem;
                 color: rgb(96 70 139);
                 text-shadow: -8px -3px 20px rgb(150 121 198);
             }
@@ -40,7 +40,7 @@
                     padding: 1rem 2rem;
                     border-radius: $borderRadius;
                     box-shadow: inset 0px 0px 8px 2px rgb(150, 121, 198);
-                    transition: 0.5s;
+                    transition: .75s;
 
                     &:hover{
                         background: $color-5;
@@ -67,6 +67,7 @@
                 font-size: 3rem;
             }
             h2{
+                padding: 1.5rem 0 1rem;
                 font-size: 1.8rem;
             }
         }

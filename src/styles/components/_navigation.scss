@@ -39,6 +39,7 @@
             }
             h1{
                 font-size: 1.3rem;
+                font-weight: bold;
                 text-transform: uppercase;
                 letter-spacing: .2rem;
                 margin-top: 1.5rem;
@@ -61,7 +62,7 @@
                 padding: 1rem 0 1rem .4rem;
 
                 .navActive{
-                    color:white;
+                    color:rgb(0, 0, 0);
                 }
 
                 .nav-item {
@@ -78,14 +79,15 @@
                 span {
                     color: $dark;
                     transition: 0.25s;
-                    
-                    &:hover{
-                        color: $color-2;
-                    }
+                    font-weight: bold;
                 }
+                .navActive {
+                    text-decoration: underline !important;
+                   }                   
             }
         }
     }
+    
     .socialNetwork{
         grid-area: 3;
         ul{
@@ -128,6 +130,7 @@
         p{
             color: $dark;
             margin-bottom: 5px;
+            font-weight: bold;
 
             &:hover{
                 color: $color-2;

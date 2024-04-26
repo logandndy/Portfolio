@@ -12,7 +12,7 @@ const Skills = () => {
             <img></img>
             Wordpress
           </li>
-          <li>Webflow</li>
+          <li>Github</li>
         </ul>
         <ul>
           <li>Figma</li>

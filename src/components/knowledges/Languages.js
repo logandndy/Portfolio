@@ -11,7 +11,7 @@ export default class languages extends Component {
     Logiciels: [
       { id: 1, value: "Figma", xp: 0.8 },
       { id: 2, value: "Adobe XD", xp: 0.3 },
-      { id: 3, value: "Sketch", xp: 0.3 },
+      { id: 3, value: "Webflow", xp: 0.5 },
     ],
     frameworks: [
       { id: 1, value: "React", xp: 0.3 },
