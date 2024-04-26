@@ -18,18 +18,10 @@ export default class Project extends Component {
     });
   };
 
-  componentDidMount() {
-    // Vérifier si source1 est défini pour l'élément avec id: 2
-    if (this.props.item.id === 2 && !this.props.item.source1) {
-      window.alert("Cet élément ne possède pas de code source.");
-    }
-  }
-
   render() {
     let { name, languagesIcons, source, source1, info, picture } =
       this.props.item;
     const infoSegments = info.match(/.{1,100}/g);
-    // Transformer chaque segment en un élément <p> pour un retour à la ligne
     const infoParagraphs = infoSegments.map((segment, index) => (
       <p key={index}>{segment}</p>
     ));
@@ -72,7 +64,7 @@ export default class Project extends Component {
                     >
                       Maquette
                     </a>
-                    {source1 && (
+                    {source1 && ( // Utilisation du rendu conditionnel pour vérifier si source1 est défini
                       <a
                         href={source1}
                         rel="noopener noreferrer"

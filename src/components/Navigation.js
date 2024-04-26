@@ -76,17 +76,6 @@ const Navigation = () => {
           <li>
             <div className="nav-res">
               <a
-                href="https://www.google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={twitterIcon} alt="res" className="pngTwitter" />
-              </a>
-            </div>
-          </li>
-          <li>
-            <div className="nav-res">
-              <a
                 href="https://www.linkedin.com/in/logan-donday-654274220/"
                 target="_blank"
                 rel="noopener noreferrer"

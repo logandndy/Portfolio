@@ -28,7 +28,7 @@ const Contact = () => {
                     alert("Téléphone copié !");
                   }}
                 >
-                  06 89 40 81 12
+                  07 89 40 81 12
                 </span>
               </CopyToClipboard>
             </li>
@@ -64,14 +64,6 @@ const Contact = () => {
             >
               <h4>Github</h4>
               <img src={iconGit}></img>
-            </a>
-            <a
-              href="http://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h4>LinkedIn</h4>
-              <img src={iconLinked}></img>
             </a>
           </ul>
         </div>
