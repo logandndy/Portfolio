@@ -223,21 +223,25 @@
     .otherSkills:hover {
         transition: 0.75s;
         transform: scale(1.1) translate(10%, -50%);
+        border: 2px solid rgb(194, 185, 254);
         z-index: 1000;
     }
     .hobbies:hover {
         transition: 0.75s;
         transform: scale(1.1) translate(-30%, -30%);
+        border: 2px solid rgb(194, 185, 254);
         z-index: 1000;
     }
     .experience:hover {
         transition: 0.75s;
         transform: scale(1.1) translate(-25%, 10%);
+        border: 2px solid rgb(194, 185, 254);
         z-index: 1000;
     }
     .languagesFrameworks:hover {
         transition: 0.75s;
         transform: scale(1.1) translate(30%, 15%);
+        border: 2px solid rgb(194, 185, 254);
         z-index: 1000;
     }
 }

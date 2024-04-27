@@ -33,6 +33,10 @@
                 color: rgb(96 70 139);
                 text-shadow: -8px -3px 20px rgb(150 121 198);
             }
+            h1:hover, h2:hover{
+                transition: .75s;
+                transform: translateX(10%);
+            }
             .pdf{
                 a{
                     font-size: 1.5rem;
