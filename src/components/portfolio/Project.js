@@ -75,7 +75,8 @@ export default class Project extends Component {
                       </a>
                     )}
                   </div>
-                  <p className="text">{infoParagraphs}</p>
+                  <p className="text">{info}</p>{" "}
+                  {/* Affichage du texte complet */}
                 </div>
                 <div className="button return" onClick={this.handleInfo}>
                   Retourner sur la page

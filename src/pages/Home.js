@@ -12,12 +12,8 @@ const Home = () => {
           <h2>Webdesign</h2>
           <h2>Design UI/UX</h2>
           <div className="pdf">
-            <a
-              href="/Mon objectif est de me professionnaliser dans le métier de Designer UXUI.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Télecharger mon CV
+            <a href="/CVLogandonday.pdf" download>
+              Télécharger mon CV
             </a>
           </div>
         </div>
