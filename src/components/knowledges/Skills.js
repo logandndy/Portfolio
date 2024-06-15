@@ -8,22 +8,13 @@ const Skills = () => {
       <div className="list">
         <ul>
           <li>Adobe XD</li>
-          <li>
-            <img></img>
-            Wordpress
-          </li>
+          <li>CMS</li>
           <li>Github</li>
         </ul>
         <ul>
           <li>Figma</li>
-          <li>
-            <img></img>
-            UI/UX design
-          </li>
-          <li>
-            <img />
-            Utilisation de l'IA
-          </li>
+          <li>UI/UX design</li>
+          <li>Utilisation de l'IA</li>
         </ul>
       </div>
     </div>
